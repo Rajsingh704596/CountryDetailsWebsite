@@ -60,21 +60,18 @@ li{
   border-radius: 20px;;
 }
 
-
 /* Home Section */
 
 .h-container{
- padding:3.2rem;
+ padding: 0 3.2rem;
   
 }
 
-
 .h-child{
   width: 70%;
-  height:60rem;
   height:fit-content;
   margin: auto;
-  background-color: rgba(142, 194, 246, 0.826);
+  background-color: rgb(142, 194, 246);
   gap:10rem;
   padding: 60px;
   display: grid;
@@ -84,7 +81,9 @@ li{
 img{
   width: 100%;  
   margin: 5rem auto;
+
 }
+
 .hero-section{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: large;
@@ -109,22 +108,22 @@ img{
   gap:20px;
   justify-content: center;
 }
+
 @media screen and (max-width:990px){
- 
   .h-child{
     display: flex;
     flex-direction: column;
-    
+    gap:30px; 
   }
 
   img{
     order:0;
     width:100%;
- 
+    margin:0px;
   }
   .hero-section{
     order:1;
-
+    
   }
 }
 
@@ -209,6 +208,7 @@ button{
 select{
   margin-top: 5px;
   width: 5rem;
+  height:2rem;
 }
 
 .body-individual{
