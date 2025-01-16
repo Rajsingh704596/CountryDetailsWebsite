@@ -1,0 +1,85 @@
+{
+    "countries": [
+      {
+        "name": "United States",
+        "capital": "Washington, D.C.",
+        "population": 331002651,
+        "area": 9833517,
+        "region": "Americas",
+        "languages": ["English"]
+      },
+      {
+        "name": "Canada",
+        "capital": "Ottawa",
+        "population": 37742154,
+        "area": 9984670,
+        "region": "Americas",
+        "languages": ["English", "French"]
+      },
+      {
+        "name": "Mexico",
+        "capital": "Mexico City",
+        "population": 128933000,
+        "area": 1964375,
+        "region": "Americas",
+        "languages": ["Spanish"]
+      },
+      {
+        "name": "Germany",
+        "capital": "Berlin",
+        "population": 83783942,
+        "area": 357022,
+        "region": "Europe",
+        "languages": ["German"]
+      },
+      {
+        "name": "France",
+        "capital": "Paris",
+        "population": 67081000,
+        "area": 643801,
+        "region": "Europe",
+        "languages": ["French"]
+      },
+      {
+        "name": "India",
+        "capital": "New Delhi",
+        "population": 1380004385,
+        "area": 3287263,
+        "region": "Asia",
+        "languages": ["Hindi", "English"]
+      },
+      {
+        "name": "China",
+        "capital": "Beijing",
+        "population": 1393409038,
+        "area": 9596961,
+        "region": "Asia",
+        "languages": ["Mandarin"]
+      },
+      {
+        "name": "Brazil",
+        "capital": "Brasilia",
+        "population": 212559417,
+        "area": 8515767,
+        "region": "Americas",
+        "languages": ["Portuguese"]
+      },
+      {
+        "name": "Australia",
+        "capital": "Canberra",
+        "population": 25499884,
+        "area": 7692024,
+        "region": "Oceania",
+        "languages": ["English"]
+      },
+      {
+        "name": "South Africa",
+        "capital": "Pretoria",
+        "population": 59308690,
+        "area": 1219090,
+        "region": "Africa",
+        "languages": ["Afrikaans", "English", "Zulu", "Xhosa", "Others"]
+      }
+    ]
+  }
+  

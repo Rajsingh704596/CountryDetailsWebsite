@@ -1,0 +1,220 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(0, 0, 0);
+}
+
+/* Header section */
+.container{
+  width: 100%;
+  background-color: rgba(58, 64, 71, 0.884);
+  box-shadow: rgba(52, 52, 52, 0.5)0px 1px 10px 2px;
+  /* max-width: 100rem; */
+}
+
+.logo{
+  width:20%;
+  margin:10px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.child{
+
+  color:whitesmoke;
+  width:70%;
+  margin:auto;
+  display:grid;
+  grid-template-columns: repeat(2,1Fr);
+  height:6rem;
+  align-items: center;
+
+}
+
+ul{
+  display: flex;
+  justify-content: flex-end;
+  gap:3rem;
+  
+  padding: 0px 10px;
+}
+
+li{ 
+  list-style: none;
+ 
+}
+
+.link{
+  color:white;
+  text-decoration: none;
+}
+
+.link:hover{
+  background-color: white;
+  color:black;
+  padding:5px;
+  border-radius: 20px;;
+}
+
+
+/* Home Section */
+
+.h-container{
+ padding:3.2rem;
+  
+}
+
+
+.h-child{
+  width: 70%;
+  height:60rem;
+  height:fit-content;
+  margin: auto;
+  background-color: rgba(142, 194, 246, 0.826);
+  gap:10rem;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(2,1Fr);
+
+}
+img{
+  width: 100%;  
+  margin: 5rem auto;
+}
+.hero-section{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: 700;
+  line-height: 1.50;
+  font-style: oblique;
+}
+
+.h-content{
+  margin: 2rem 0;
+}
+
+.btn{
+  width:9rem;
+  margin-top: 40px;
+  padding:10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: rgba(5, 21, 37, 0.5) 0px 1px 11px 1px;
+  display:flex;
+  align-items: center;
+  gap:20px;
+  justify-content: center;
+}
+@media screen and (max-width:990px){
+ 
+  .h-child{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  img{
+    order:0;
+    width:100%;
+ 
+  }
+  .hero-section{
+    order:1;
+
+  }
+}
+
+/* footer content */
+/* footer.css */
+.footer {
+  background-color: #333; /* Dark background for footer */
+  color: white;           /* White text */
+  padding: 20px 0;        /* Top and bottom padding */
+  text-align: center;     /* Center the text */
+  position: relative;     /* Positioning for future enhancements */
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;  /* Maximum width for the footer content */
+  margin: 0 auto;     /* Center align content */
+}
+
+
+/* hamburger Menu*/
+.ham-menu{
+  display: none;
+}
+
+/* media queries */
+@media screen and (max-width:998px){
+  .menu-web{
+    display: none;
+  }
+
+  .ham-menu{
+    display: inline-block;
+    text-align: end;
+  }
+   
+  .ham-button{
+    border: 6px solid gray;
+    padding: 5px;
+    
+  }
+
+  .menu-mobile{
+    position: absolute;
+    z-index: 1;          /* z index higher so menu mobile position is appear in front of others */
+    top: 6rem;
+    left: 0;
+    background-color: #0d1212;
+    width: 100%;
+    box-shadow: rgba(0,0,0,0.25)0px 14px 28px;
+  }
+   
+  .menu-mobile ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  & li:first-child{
+    margin-top: 1.2rem;
+  }
+
+  & li:last-child{
+    margin-bottom:1.2rem;
+  }
+}
+
+/* country component */
+.flex{
+  display: flex;
+  justify-content: space-around;
+  margin:2rem;
+}
+
+button{
+  border-radius: 10px;
+  padding: 0.2rem;
+  margin-top:6px;
+}
+
+select{
+  margin-top: 5px;
+  width: 5rem;
+}
+
+.body-individual{
+  color:white;
+  width:40%;
+  margin: 5rem auto;
+  padding:1rem;
+
+}
