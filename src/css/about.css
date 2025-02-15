@@ -1,22 +1,23 @@
+/* General styles */
 .section-about {
-    width: 70%;
-    margin: 3rem auto;
+    width: 90%; /* Adjusted for smaller screens */
+    margin: 2rem auto; /* Reduced margin for smaller screens */
     padding: 1rem;
     background-color: rgb(0, 0, 0);
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Default layout for larger screens */
     gap: 2rem;
     color: white;
 }
 
 .container-title {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 40px;
-    line-height: 60px;
+    margin-bottom: 20px; /* Reduced margin for smaller screens */
+    font-size: 32px; /* Reduced font size for smaller screens */
+    line-height: 40px; /* Adjusted line height */
     color: white;
 }
 
@@ -24,8 +25,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%; /* Ensures all cards take full height */
-    max-width: 55rem;
+    height: 100%;
+    max-width: 100%; /* Adjusted for smaller screens */
     border: 0;
     width: 100%;
     margin-inline: auto;
@@ -34,14 +35,14 @@
 .container-card {
     position: relative;
     border: 2px solid transparent;
-    background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    background: linear-gradient(71deg, #1a1a1a, #2c2c2c, #1a1a1a); /* Darker background for cards */
     background-clip: padding-box;
-    border-radius: 45px;
-    padding: 40px;
-    height: 100%; /* Ensures the card container takes full height */
+    border-radius: 25px; /* Reduced border radius for smaller screens */
+    padding: 20px; /* Reduced padding for smaller screens */
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space between title and content */
+    justify-content: space-between;
 }
 
 .bg-blue-box::after {
@@ -52,29 +53,83 @@
     right: -1px;
     content: "";
     z-index: -1;
-    border-radius: 45px;
-    background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+    border-radius: 25px; /* Reduced border radius for smaller screens */
+    background: linear-gradient(71deg, #0c0a0e, #3a4a7a, #0c0a0e); /* Adjusted gradient */
 }
 
 .card-title {
     font-weight: 600;
     color: white;
-    font-size: 28px;
+    font-size: 24px; /* Reduced font size for smaller screens */
     padding-bottom: 8px;
     letter-spacing: -0.02em;
-    line-height: 40px;
+    line-height: 32px; /* Adjusted line height */
 }
 
 .card-description {
     font-weight: 500;
-    line-height: 32px;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 18px;
-    max-width: 470px;
+    line-height: 24px; /* Adjusted line height */
+    color: rgba(255, 255, 255, 0.7); /* Slightly brighter text for better readability */
+    font-size: 16px; /* Reduced font size for smaller screens */
+    max-width: 100%; /* Adjusted for smaller screens */
 }
 
+/* Responsive adjustments for smaller screens */
 @media screen and (max-width: 998px) {
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+        gap: 1.5rem; /* Reduced gap */
+    }
+
+    .container-title {
+        font-size: 28px; /* Further reduced font size */
+        line-height: 36px;
+    }
+
+    .container-card {
+        padding: 15px; /* Further reduced padding */
+        border-radius: 20px; /* Further reduced border radius */
+    }
+
+    .card-title {
+        font-size: 20px; /* Further reduced font size */
+        line-height: 28px;
+    }
+
+    .card-description {
+        font-size: 14px; /* Further reduced font size */
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        gap: 1rem; /* Further reduced gap */
+    }
+
+    .section-about {
+        width: 95%; /* Further adjusted width */
+        margin: 1rem auto; /* Further reduced margin */
+    }
+
+    .container-title {
+        font-size: 24px; /* Further reduced font size */
+        line-height: 32px;
+    }
+
+    .container-card {
+        padding: 10px; /* Further reduced padding */
+        border-radius: 15px; /* Further reduced border radius */
+    }
+
+    .card-title {
+        font-size: 18px; /* Further reduced font size */
+        line-height: 24px;
+    }
+
+    .card-description {
+        font-size: 12px; /* Further reduced font size */
+        line-height: 18px;
     }
 }
