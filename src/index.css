@@ -246,3 +246,63 @@ select{
   }
 
 }
+
+/* search filter css  */
+/* General styles for SearchFilter */
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.flex input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 200px; /* Default width for larger screens */
+  margin: 5px;
+}
+
+.flex button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3a4a7a;
+  color: white;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.flex select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 5px;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .flex {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: stretch; /* Stretch elements to full width */
+      margin: 1rem; /* Reduce margin */
+  }
+
+  .flex input[type="text"] {
+      width: 100%; /* Full width for input */
+      margin: 5px 0; /* Adjust margin */
+  }
+
+  .flex button {
+      width: 100%; /* Full width for buttons */
+      margin: 5px 0; /* Adjust margin */
+  }
+
+  .flex select {
+      width: 100%; /* Full width for dropdown */
+      margin: 5px 0; /* Adjust margin */
+  }
+}
