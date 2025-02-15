@@ -218,3 +218,31 @@ select{
   padding:1rem;
 
 }
+
+@media screen and (max-width:440px) {
+
+  .h-child{
+    width:100%;
+    margin: 0 auto;
+  }
+
+  .hero-section{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heading{
+    font-size:medium;
+    text-align: center;
+
+  }
+
+  .h-content{
+    font-size:small;
+  }
+
+}
