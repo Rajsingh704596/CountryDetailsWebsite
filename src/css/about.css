@@ -108,6 +108,10 @@
         gap: 1rem; /* Further reduced gap */
     }
 
+    .card{
+        margin:4px 0px;
+    }
+
     .section-about {
         width: 95%; /* Further adjusted width */
         margin: 1rem auto; /* Further reduced margin */
