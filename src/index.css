@@ -249,6 +249,11 @@ select{
 
 /* search filter css  */
 /* General styles for SearchFilter */
+
+.option{
+  padding:4px;
+}
+
 .flex {
   display: flex;
   justify-content: space-around;
